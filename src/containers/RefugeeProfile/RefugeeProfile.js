@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 class RefugeeProfile extends Component {
@@ -24,3 +26,5 @@ class RefugeeProfile extends Component {
     )
   }
 }
+
+export default RefugeeProfile;
