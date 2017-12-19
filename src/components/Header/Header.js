@@ -5,10 +5,10 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <h2>DOMA</h2>
+        <h2>DOMA Header Logo</h2>
         <nav>
           <ul>
-            <li><Link to="/">DOMA</Link></li>
+            <li><Link to="/">Link to Index</Link></li>
           </ul>
         </nav>
       </div>
