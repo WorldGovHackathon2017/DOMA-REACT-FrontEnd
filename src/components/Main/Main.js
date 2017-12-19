@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { Route, Switch } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import HomePage from '../../containers/HomePage/HomePage';
 
 class Main extends Component {
   render() {
@@ -13,4 +14,4 @@ class Main extends Component {
   }
 }
 
-export default Main
+export default Main;

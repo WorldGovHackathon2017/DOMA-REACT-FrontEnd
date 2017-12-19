@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import axios from 'axios'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 class HomePage extends Component {
   render() {
@@ -12,4 +12,4 @@ class HomePage extends Component {
   }
 }
 
-export default HomePage
+export default HomePage;
