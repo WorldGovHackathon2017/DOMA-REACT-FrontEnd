@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <h2>DOMA GitHub</h2>
+        <h2>DOMA Footer GitHub</h2>
       </div>
     )
   }

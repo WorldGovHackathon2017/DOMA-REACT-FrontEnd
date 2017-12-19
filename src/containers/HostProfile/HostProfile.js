@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 class HostProfile extends Component {
@@ -24,3 +26,5 @@ class HostProfile extends Component {
     )
   }
 }
+
+export default HostProfile;
