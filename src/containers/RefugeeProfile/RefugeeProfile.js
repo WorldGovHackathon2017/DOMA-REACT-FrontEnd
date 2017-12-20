@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { fetchRefugee } from '../../actions/refugee';
 
 class RefugeeProfile extends Component {
   constructor(props) {
@@ -13,18 +14,23 @@ class RefugeeProfile extends Component {
     }
   }
 
-  componentDidMount() {
-    axios.get('api/refugees/:id')
-      .then(({data}) => this.setState({refugee: data}))
+  componentWillMount() {
+    const refugeeId = 1; // temporarily untill api can be used.
+    this.props.dispatch(fetchRefugee(refugeeId));
   }
 
   render() {
+    console.log(this.props.refugee);
     return (
       <div className="refugee-profile">
-      
+        {this.props.refugee.name}
       </div>
     )
   }
 }
 
-export default RefugeeProfile;
+const mapStateToProps = ({ refugee }) => ({
+  refugee
+});
+
+export default connect(mapStateToProps)(RefugeeProfile);
