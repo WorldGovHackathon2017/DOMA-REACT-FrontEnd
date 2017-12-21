@@ -1,6 +1,6 @@
-## BootUp-REACT-FrontEnd
+## DOMA-REACT-FrontEnd
 
-BootUp [API](https://github.com/DBC-BootUp/BootUp-API/)
+### DOMA [API](https://github.com/WorldGovHackathon2017/DOMA-API/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
