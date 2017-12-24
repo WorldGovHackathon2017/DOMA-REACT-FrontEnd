@@ -35,22 +35,24 @@ class HostListing extends Component {
   }
 
   componentWillMount() {
-    const refugeeId = 1; // temporarily untill api can be used.
-    this.props.dispatch(fetchRefugee(refugeeId));
+    const hostListingId = 1; // temporarily untill api can be used.
+    this.props.dispatch(fetchHostListing(hostListingId));
   }
 
   render() {
-    console.log(this.props.refugee);
+    console.log(this.props.listing);
     return (
-      <div className="refugee-profile">
-        {this.props.refugee.name}
+      <div className="host-listing">
+        {this.props.listing.number_of_guests}
+        {this.props.listing.city}
+        {this.props.listing.state}
       </div>
     )
   }
 }
 
-const mapStateToProps = ({ refugee }) => ({
-  refugee
+const mapStateToProps = ({ hostListing }) => ({
+  hostListing
 });
 
-export default connect(mapStateToProps)(RefugeeProfile);
+export default connect(mapStateToProps)(HostListing);
