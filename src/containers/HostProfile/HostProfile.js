@@ -8,7 +8,17 @@ class HostProfile extends Component {
 
     this.state = {
       host: {
-        name: ""
+        first_name: "",
+        last_name: "",
+        username: "",
+        email: "",
+        phone_number: "",
+        linkedin_url: "",
+        city: "",
+        state: "",
+        country: "",
+        photo_url: "",
+        completed_registration: null
       }
     }
   }
