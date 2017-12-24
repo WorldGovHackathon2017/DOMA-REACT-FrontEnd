@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { fetchHost } from '../../actions/host';
 
 class HostProfile extends Component {
   constructor(props) {
@@ -18,23 +19,37 @@ class HostProfile extends Component {
         state: "",
         country: "",
         photo_url: "",
-        completed_registration: null
+        completed_registration: null,
+        amenities: [],
+        listings: []
       }
     }
   }
 
-  componentDidMount() {
-    axios.get('api/hosts/:id')
-      .then(({data}) => this.setState({host: data}))
+  // componentDidMount() {
+  //   axios.get('api/hosts/:id')
+  //     .then(({data}) => this.setState({host: data}))
+  // }
+
+  componentWillMount() {
+    const hostId = 1; // temporarily untill api can be used.
+    this.props.dispatch(fetchHost(hostId));
   }
 
   render() {
+    console.log(this.props.host);
     return (
       <div className="host-profile">
-      
+        {this.props.host.name}
       </div>
     )
   }
 }
 
-export default HostProfile;
+const mapStateToProps = ({ host }) => ({
+  host
+});
+
+// export default HostProfile;
+
+export default connect(mapStateToProps)(HostProfile);

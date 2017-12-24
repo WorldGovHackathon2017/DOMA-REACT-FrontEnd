@@ -27,7 +27,7 @@ class RefugeeProfile extends Component {
         current_country: "",
         photo_url: "",
         completed_registration: null,
-        amenity: {},
+        amenities: [],
         requests: []
       }
     }
