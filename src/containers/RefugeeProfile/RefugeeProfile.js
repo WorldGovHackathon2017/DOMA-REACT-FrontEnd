@@ -9,7 +9,24 @@ class RefugeeProfile extends Component {
 
     this.state = {
       refugee: {
-        name: ""
+        first_name: "",
+        last_name: "",
+        username: "malala",
+        email: "",
+        phone_number: "",
+        social_media_url: "",
+        home_city: "",
+        home_country: "",
+        organization_name: "",
+        organization_url: "",
+        organization_contact_name: "",
+        organization_contact_email: "",
+        organization_contact_phone: "",
+        current_city: "",
+        current_state: "",
+        current_country: "",
+        photo_url: "",
+        completed_registration: null
       }
     }
   }

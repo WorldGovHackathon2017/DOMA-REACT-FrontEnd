@@ -14,8 +14,11 @@ class Main extends Component {
           <Route exact path='/' component={HomePage} />
           // <Route exact path='/login' component="" />
           <Route exact path='/refugees/:id' component={RefugeeProfile} />
+          <Route exact path='/requests' component={Requests} />
+          <Route exact path='/requests/:id' component={RefugeeRequest} />
           <Route exact path='/hosts/:id' component={HostProfile} />
           <Route exact path='/listings' component={Listings} />
+          <Route exact path='/listings/:id' component={HostListing} />
         </Switch>
       </div>
     )
