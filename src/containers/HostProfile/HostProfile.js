@@ -20,7 +20,6 @@ class HostProfile extends Component {
         country: "",
         photo_url: "",
         completed_registration: null,
-        amenities: [],
         listings: []
       }
     }
