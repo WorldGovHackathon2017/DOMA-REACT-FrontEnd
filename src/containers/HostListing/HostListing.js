@@ -9,8 +9,6 @@ class HostListing extends Component {
 
     this.state = {
       listing: {
-        host: {},
-        amenity: {},
         handicap_accessible: null,
         provide_medical_attention: null,
         access_to_schools: null,
@@ -29,7 +27,9 @@ class HostListing extends Component {
         photo_1_url: "",
         photo_2_url: "",
         photo_3_url: "",
-        completed_listing: null
+        completed_listing: null,
+        host: {},
+        amenity: {}
       }
     }
   }
