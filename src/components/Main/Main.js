@@ -5,6 +5,9 @@ import HomePage from '../../containers/HomePage/HomePage';
 import RefugeeProfile from '../../containers/RefugeeProfile/RefugeeProfile';
 import HostProfile from '../../containers/HostProfile/HostProfile';
 import Listings from '../../containers/Listings/Listings';
+import RefugeeRequest from '../../containers/RefugeeRequest/RefugeeRequest';
+import Requests from '../../containers/Requests/Requests';
+import HostListing from '../../containers/HostListing/HostListing';
 
 class Main extends Component {
   render() {
