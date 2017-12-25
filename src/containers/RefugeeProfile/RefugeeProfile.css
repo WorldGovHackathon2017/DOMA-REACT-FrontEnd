@@ -1,0 +1,13 @@
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.refugee-profile {
+  max-width: 1040px;
+  margin: 30px auto;
+  border: none;
+}
+
+.section-container {
+  padding: 10px;
+}
