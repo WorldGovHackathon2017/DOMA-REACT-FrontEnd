@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { fetchHostListing } from '../../actions/hostListing';
+import './HostListing.css';
 
 class HostListing extends Component {
   constructor(props) {

@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './Footer.css';
+import githubLogo from '../../images/githubLogo.png'
 
 class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <h2>DOMA Footer GitHub</h2>
+        <a href="https://github.com/WorldGovHackathon2017">
+          <img id="github-logo" src={githubLogo} />
+        </a>
+        <br />
+        <img id="doma-logo" src='' />
       </div>
     )
   }
