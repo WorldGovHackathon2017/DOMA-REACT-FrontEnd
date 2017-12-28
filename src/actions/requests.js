@@ -11,7 +11,7 @@ export const fetchRequests = (requestsId) => (dispatch) => {
 //   dispatch(setRequests(requests));
 // };
 
-// const setRequests = (requests) => ({
-//   type: 'SET_REQUESTS',
-//   requests
-// });
+const setRequests = (requests) => ({
+  type: 'SET_REQUESTS',
+  requests
+});

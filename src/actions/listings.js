@@ -10,7 +10,7 @@ export const fetchListings = (listingsId) => (dispatch) => {
 //   dispatch(setListings(listings));
 // };
 
-// const setListings = (listings) => ({
-//   type: 'SET_LISTINGS',
-//   listings
-// });
+const setListings = (listings) => ({
+  type: 'SET_LISTINGS',
+  listings
+});

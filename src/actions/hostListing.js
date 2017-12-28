@@ -11,7 +11,7 @@ export const fetchHostListing = (hostListingId) => (dispatch) => {
 //   dispatch(setHostListing(hostListing));
 // };
 
-// const setHostListing = (hostListing) => ({
-//   type: 'SET_HOST_LISTING',
-//   hostListing
-// });
+const setHostListing = (hostListing) => ({
+  type: 'SET_HOST_LISTING',
+  hostListing
+});

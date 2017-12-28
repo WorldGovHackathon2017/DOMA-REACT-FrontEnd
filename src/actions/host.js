@@ -11,7 +11,7 @@ export const fetchHost = (hostId) => (dispatch) => {
 //   dispatch(setHost(host));
 // };
 
-// const setHost = (host) => ({
-//   type: 'SET_HOST',
-//   host
-// });
+const setHost = (host) => ({
+  type: 'SET_HOST',
+  host
+});
