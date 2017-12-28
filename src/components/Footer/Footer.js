@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 import githubLogo from '../../images/githubLogo.png'
 
+
 class Footer extends Component {
   render() {
     return (
@@ -11,7 +12,7 @@ class Footer extends Component {
           <img id="github-logo" src={githubLogo} />
         </a>
         <br />
-        <img id="doma-logo" src='' />
+        <img id="logo" src='' />
       </div>
     )
   }
