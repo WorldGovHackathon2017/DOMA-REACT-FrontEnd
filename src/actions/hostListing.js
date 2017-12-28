@@ -9,9 +9,9 @@ export const fetchHostListing = (hostListingId) => (dispatch) => {
 //     name: 'Test'
 //   };
 //   dispatch(setHostListing(hostListing));
-// };
+};
 
 const setHostListing = (hostListing) => ({
   type: 'SET_HOST_LISTING',
-  hostListing
+  fetchHostListing
 });

@@ -8,9 +8,9 @@ export const fetchListings = (listingsId) => (dispatch) => {
 //     listings: []
 //   };
 //   dispatch(setListings(listings));
-// };
+};
 
 const setListings = (listings) => ({
   type: 'SET_LISTINGS',
-  listings
+  fetchListings
 });

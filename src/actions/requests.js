@@ -9,9 +9,9 @@ export const fetchRequests = (requestsId) => (dispatch) => {
 //     requests: []
 //   };
 //   dispatch(setRequests(requests));
-// };
+};
 
 const setRequests = (requests) => ({
   type: 'SET_REQUESTS',
-  requests
+  fetchRequests
 });
