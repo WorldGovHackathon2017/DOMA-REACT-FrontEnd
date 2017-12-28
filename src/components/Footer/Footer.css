@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+}
+
+.footer #github-logo {
+  margin-top: 25px;
+  margin-bottom: 0;
+  width: 50px;
+}
+
+.footer #logo {
+  margin-top: none;
+  width: 50px;
+}
+
+.link-button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: .5em 1em;
+  background-color: #85D0D0;
+}

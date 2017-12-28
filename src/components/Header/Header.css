@@ -1,0 +1,38 @@
+.header {
+  background-color: white;
+  min-height: 95px;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.header #logo {
+  width: 250px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.header #links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header #links li {
+  display: inline-block;
+  text-align: center;
+  font-size: 1em;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: #85D0D0;
+}
+
+.header a:hover {
+  color: #F58B64;
+}
