@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 export const fetchRefugeeRequest = (refugeeRequestId) => (dispatch) => {
-  // axios.get(`api/refugees/${refugeeId}`)
-  //   .then(({data}) => dispatch(setRefugee(data)));
+  // axios.get(`api/requests/${refugeeRequestId}`)
+  //   .then(({data}) => dispatch(setRefugeeRequest(data)));
 
   // temporarily untill api can be used.
   const refugeeRequest = {
