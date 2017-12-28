@@ -4,7 +4,7 @@ export const fetchHost = (hostId) => (dispatch) => {
   axios.get(`api/hosts/${hostId}`)
     .then(({data}) => dispatch(setHost(data)));
 
-  // temporarily untill api can be used.
+  // temporarily until api can be used.
   // const host = {
   //   name: 'Test'
   // };

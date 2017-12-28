@@ -39,9 +39,7 @@ class RefugeeRequest extends Component {
     console.log(this.props.request);
     return (
       <div className="refugee-request">
-        {this.props.request.number_of_guests}
-        {this.props.request.city}
-        {this.props.request.state}
+
       </div>
     )
   }

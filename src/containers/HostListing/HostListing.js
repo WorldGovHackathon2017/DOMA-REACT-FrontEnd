@@ -19,13 +19,17 @@ import {
   MdLocalHospital,
   MdSchool,
   MdPerson,
+  MdHotel,
+  MdKitchen,
+  MdLocalLaundryService,
   MdChildCare,
+  MdPets,
   MdChildFriendly,
   MdNetworkWifi,
   MdComputer,
+  MdPhone,
   MdDirectionsBike,
   MdDirectionsCar,
-  MdPhone,
   MdEmail
 } from 'react-icons/lib/md';
 
@@ -89,14 +93,24 @@ class HostListing extends Component {
           child_friendly: true,
           teen_friendly: true,
           elderly_friendly: true
-        }
+        },
+        location: "https://via.placeholder.com/900x400"
       }
     }
   }
 
   componentWillMount() {
-    const hostListingId = 1; // temporarily untill api can be used.
+    const hostListingId = 1; // temporarily until api can be used.
     this.props.dispatch(fetchHostListing(hostListingId));
+  }
+
+  renderFullName() {
+    return `${this.state.listing.host.first_name} ${this.state.listing.host.last_name}`;
+  }
+
+  renderLocation() {
+    const {city, state, country} = this.state.listing;
+    return `${city}, ${state}`;
   }
 
   render() {
@@ -118,13 +132,24 @@ class HostListing extends Component {
             )}
           </Slider>
         </section>
-        <br />
         <section className='listing-container main-background-color'>
-          <div>
-            {this.state.listing.number_of_guests}
-            {this.state.listing.city}
-            {this.state.listing.state}
+          <div className='listing-header'>Cozy Guest House for Family</div>
+          <div className='listing-body'>
+            <MdLocationSearching size={80} />
+            <div className='name-container'>
+              <h2 className='name'>{this.renderFullName()}</h2>
+              <MdLocationOn size={26} className='accent-color' style={{ verticalAlign: 'bottom', marginLeft: -5}} />{this.renderLocation()}
+            </div>
           </div>
+        </section>
+        <section className='listing-section'>
+          <h3 className='accent-color'>ABOUT ME</h3>
+          <p></p>
+        </section>
+        <section className='listing-section'>
+          <h3 className='accent-color'>CONTACT INFO</h3>
+          <MdPhone className='contact main-color' size={30} />
+           <MdEmail className='contact main-color' size={30} />
         </section>
       </div>
     )
