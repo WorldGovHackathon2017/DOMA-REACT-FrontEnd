@@ -1,3 +1,4 @@
+
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
@@ -6,11 +7,24 @@ h3 {
   border-bottom: solid 1px #ddd;
 }
 
+p {
+  margin: 0;
+}
+
 .carousel-container {
   display: inline-block;
   vertical-align: top;
   max-width: 450px;
   width: 100%;
+}
+
+
+.profile-page-container {
+  max-width: 900px;
+  margin: 30px auto;
+  border: none;
+  text-align: left;
+  font-size: 16px;
 }
 
 .profile-container {
@@ -22,16 +36,16 @@ h3 {
 }
 
 .profile-header {
-  max-width: 300px;
-  margin: 0 20px 20px;
-  padding: 20px 0 10px;
+  max-width: 380px;
+  margin: 0 30px 20px;
+  padding: 30px 0 10px;
   border-bottom: solid 1px white;
   font-size: 20px;
   font-weight: bold;
 }
 
 .profile-body {
-  max-width: 310px;
+  max-width: 380px;
   margin: 0;
   padding: 20px 20px 40px;
 }
@@ -52,7 +66,7 @@ h3 {
   vertical-align: top;
   max-width: 390px;
   width: 80%;
-  padding: 20px 30px 0px;
+  padding: 20px 30px 0;
   text-align: left;
   color: #666;
 }
