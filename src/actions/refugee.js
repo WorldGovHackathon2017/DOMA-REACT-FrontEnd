@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { setRequest } from './refugeeRequest';
+import { setRequest } from './request';
 
 export const fetchRefugee = (refugeeId) => (dispatch) => {
   axios.get(`/api/refugees/${refugeeId}`)

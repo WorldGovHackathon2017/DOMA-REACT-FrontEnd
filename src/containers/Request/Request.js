@@ -9,12 +9,12 @@ import {
   MdSchool,
   MdLocalRestaurant
 } from 'react-icons/lib/md';
-import { fetchRefugeeRequest } from '../../actions/refugeeRequest';
+import { fetchrequest } from '../../actions/request';
 import Amenity from '../../components/Amenity/Amenity';
-import './RefugeeRequest.css';
+import './Request.css';
 
 
-class RefugeeRequest extends Component {
+class Request extends Component {
   constructor(props) {
     super(props)
 
@@ -60,7 +60,7 @@ class RefugeeRequest extends Component {
   }
 
   render() {
-    console.log(this.props.refugeeRequest);
+    console.log(this.props.request);
     return (
       <div>
         <div className='request-header-container main-background-color'>
@@ -107,7 +107,7 @@ class RefugeeRequest extends Component {
             <div style={{ opacity: this.state.request.require_medical_attention ? 1 : 0.4 }} >School</div>
           </section>
         </div>
-        <Amenity {...this.props.refugeeRequest.amenity} />
+        <Amenity {...this.props.request.amenity} />
         <section className='suppelemntal-info'>
           <h3 className='accent-color'>SUPPELEMENTAL INFO</h3>
           <p>{this.state.request.supplemental_info}</p>
@@ -117,8 +117,8 @@ class RefugeeRequest extends Component {
   }
 }
 
-const mapStateToProps = ({ refugeeRequest }) => ({
-  refugeeRequest
+const mapStateToProps = ({ request }) => ({
+  request
 });
 
-export default connect(mapStateToProps)(RefugeeRequest);
+export default connect(mapStateToProps)(Request);

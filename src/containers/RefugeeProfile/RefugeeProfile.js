@@ -13,7 +13,7 @@ import {
   MdEmail
 } from 'react-icons/lib/md';
 import './RefugeeProfile.css';
-import RefugeeRequest from '../RefugeeRequest/RefugeeRequest';
+import Request from '../Request/Request';
 import { fetchRefugee } from '../../actions/refugee';
 
 class RefugeeProfile extends Component {
@@ -106,7 +106,7 @@ class RefugeeProfile extends Component {
             <MdPhone className='contact main-color' size={30} />
              <MdEmail className='contact main-color' size={30} />
           </section>
-          <RefugeeRequest refugeeId={this.props.match.params.id}/>
+          <request refugeeId={this.props.match.params.id}/>
         </Card>
       </div>
     )
