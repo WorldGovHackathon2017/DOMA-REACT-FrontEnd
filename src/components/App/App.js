@@ -9,13 +9,28 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 class App extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      current_user: { id: 1 }
+    }
+
+    this.setCurrentUser = this.setCurrentUser.bind(this)
+  }
+
+  setCurrentUser(user){
+    this.setState({current_user: user}
+    )
+  }
+
   render() {
     return (
       <BrowserRouter>
         <MuiThemeProvider>
           <div className="App">
-            <Header />
-            <Main />
+            <Header current_user={this.state.current_user} />
+            <Main current_user={this.state.current_user} />
             <Footer />
           </div>
         </MuiThemeProvider>

@@ -4,7 +4,7 @@ export const fetchHostListing = (hostListingId) => (dispatch) => {
   axios.get(`api/listings/${hostListingId}`)
     .then(({data}) => dispatch(setHostListing(data)));
 
-  // temporarily untill api can be used.
+  // temporarily until api can be used.
 //   const hostListing = {
 //     name: 'Test'
 //   };

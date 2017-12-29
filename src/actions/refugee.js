@@ -4,7 +4,7 @@ export const fetchRefugee = (refugeeId) => (dispatch) => {
   // axios.get(`api/refugees/${refugeeId}`)
   //   .then(({data}) => dispatch(setRefugee(data)));
 
-  // temporarily untill api can be used.
+  // temporarily until api can be used.
   const refugee = {
     name: 'Test'
   };

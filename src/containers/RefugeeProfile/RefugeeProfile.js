@@ -91,7 +91,6 @@ class RefugeeProfile extends Component {
             )}
           </Slider>
         </section>
-        <br />
         <section className='profile-container main-background-color'>
           <div className='profile-header'>Profile Hub</div>
           <div className='profile-body'>
@@ -102,16 +101,14 @@ class RefugeeProfile extends Component {
             </div>
           </div>
         </section>
-        <br />
         <section className='profile-section'>
           <h3 className='accent-color'>ABOUT ME</h3>
           <p>{this.state.refugee.about}</p>
         </section>
-        <br />
         <section className='profile-section'>
           <h3 className='accent-color'>CONTACT INFO</h3>
           <MdPhone className='contact main-color' size={30} />
-           <MdEmail className='contact main-color' size={30} />
+          <MdEmail className='contact main-color' size={30} />
         </section>
       </div>
     )
