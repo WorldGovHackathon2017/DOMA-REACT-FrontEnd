@@ -13,12 +13,11 @@ class App extends Component {
     super()
 
     this.state = {
-      current_user: { id: 1, listings: [] }
+      current_user: { id: 1 }
     }
 
     this.setCurrentUser = this.setCurrentUser.bind(this)
   }
-
 
   setCurrentUser(user){
     this.setState({current_user: user}

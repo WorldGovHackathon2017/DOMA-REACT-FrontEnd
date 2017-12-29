@@ -22,18 +22,22 @@ h3 {
 }
 
 .listing-header {
-  max-width: 300px;
+  max-width: 425px;
   margin: 0 20px 20px;
-  padding: 20px 0 10px;
+  padding: 20px 0 0px;
   border-bottom: solid 1px white;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .listing-body {
-  max-width: 310px;
+  max-width: 425px;
   margin: 0;
-  padding: 20px 20px 40px;
+  padding: 0px 20px 20px;
+}
+
+.location {
+  padding-top: 20px;
 }
 
 .name-container {
@@ -50,9 +54,9 @@ h3 {
 .listing-section {
   display: inline-block;
   vertical-align: top;
-  max-width: 390px;
+  max-width: 425px;
   width: 80%;
-  padding: 20px 30px 0px;
+  padding: 20px 25px 0px;
   text-align: left;
   color: #666;
 }

@@ -108,7 +108,7 @@ class RefugeeProfile extends Component {
         <section className='profile-section'>
           <h3 className='accent-color'>CONTACT INFO</h3>
           <MdPhone className='contact main-color' size={30} />
-           <MdEmail className='contact main-color' size={30} />
+          <MdEmail className='contact main-color' size={30} />
         </section>
       </div>
     )
