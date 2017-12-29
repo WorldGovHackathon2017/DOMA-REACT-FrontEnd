@@ -134,19 +134,19 @@ class HostListing extends Component {
         </section>
         <section className='listing-container main-background-color'>
           <div className='listing-header'>
-            <span>Cozy Guest House for Family</span>          <span><MdBookmarkOutline className="accent-color" size={30} /></span>
+            <span>Cozy Guest House for Family</span> <span>   <span>     </span><MdBookmarkOutline className="accent-color" size={30} /></span>
           </div>
           <div className='listing-body'>
             <MdPeopleOutline size={50} />
-            <span>     5     </span>
+            <span> 5 </span>   <span> </span>
             <MdAccessible size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdLocalHospital size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdSchool size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdChildFriendly size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdPets size={50} />
             <br />
             <MdLocationSearching className='location' size={50} />
@@ -159,26 +159,26 @@ class HostListing extends Component {
         <section className='listing-section'>
           <h3 className='accent-color'>ACCOMODATIONS</h3>
             <MdHotel size={50} />
-            <span>     3     </span>
+            <span> 3 </span>   <span> </span>
             <MdKitchen size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdLocalLaundryService size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdNetworkWifi size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdComputer size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdPhone size={50} />
             <br />
             <MdDirectionsBike size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
             <MdDirectionsCar size={50} />
-            <span>          </span>
+            <span> </span>   <span> </span>
         </section>
         <section className='listing-section'>
           <h3 className='accent-color'>CONTACT INFO</h3>
           <ul>
-            <li><p className='accent-color' size={30}>{this.renderFullName()}</p></li>
+            <li><h4 className='accent-color' size={30}>{this.renderFullName()}</h4></li>
             <li><MdPhone className='contact main-color' size={30} /></li>
             <li><MdEmail className='contact main-color' size={30} /></li>
           </ul>
