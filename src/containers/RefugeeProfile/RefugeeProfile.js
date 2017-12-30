@@ -2,20 +2,18 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
-
+import { Card } from 'material-ui/Card';
 import {GridList, GridTile} from 'material-ui/GridList';
 import Divider from 'material-ui/Divider';
 import FlatButton from 'material-ui/FlatButton';
 import {
-  MdPermIdentity,
-  MdPeopleOutline,
-  MdSchool,
   MdLocationSearching,
   MdLocationOn,
   MdPhone,
   MdEmail
 } from 'react-icons/lib/md';
 import './RefugeeProfile.css';
+import Request from '../Request/Request';
 import { fetchRefugee } from '../../actions/refugee';
 
 class RefugeeProfile extends Component {
@@ -45,22 +43,12 @@ class RefugeeProfile extends Component {
         current_state: 'CA',
         current_country: 'US',
         completed_registration: null
-      },
-      request: {
-        number_of_guests: 4,
-        handicap_accessible: true,
-        require_medical_attention: false,
-        access_to_schools: true,
-        supplemental_info: '',
-        city: 'San Francisco',
-        state: 'CA',
-        country: 'US'
       }
     }
   }
 
   componentWillMount() {
-    const refugeeId = 1; // temporarily untill api can be used.
+    const refugeeId = this.props.match.params.id;
     this.props.dispatch(fetchRefugee(refugeeId));
   }
 
@@ -83,33 +71,43 @@ class RefugeeProfile extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
-        <section className='carousel-container'>
-          <Slider {...sliderSettings}>
-            {this.state.refugee.images.map((imgUrl, i) =>
-              <div key={i}><img src={imgUrl} style={{ width: '100%', minHeight: 220 }} /></div>
-            )}
-          </Slider>
-        </section>
-        <section className='profile-container main-background-color'>
-          <div className='profile-header'>Profile Hub</div>
-          <div className='profile-body'>
-            <MdLocationSearching size={80} />
-            <div className='name-container'>
-              <h2 className='name'>{this.renderFullName()}</h2>
-              <MdLocationOn size={26} className='accent-color' style={{ verticalAlign: 'bottom', marginLeft: -5}} />{this.renderLocation()}
+      <div className="profile-page-container">
+        <Card>
+          <section className='carousel-container'>
+            <Slider {...sliderSettings}>
+              {this.state.refugee.images.map((imgUrl, i) =>
+                <div key={i}>
+                  <img src={imgUrl} style={{ width: '100%', minHeight: 230 }} />
+                </div>
+              )}
+            </Slider>
+          </section>
+          <section className='profile-container main-background-color'>
+            <h3 className='profile-header'>Profile Hub</h3>
+            <div className='profile-body'>
+              <MdLocationSearching size={80} />
+              <div className='name-container'>
+                <h2 className='name'>{this.renderFullName()}</h2>
+                <MdLocationOn
+                  size={26}
+                  className='accent-color'
+                  style={{ verticalAlign: 'bottom', marginLeft: -5}}
+                />
+                  {this.renderLocation()}
+              </div>
             </div>
-          </div>
-        </section>
-        <section className='profile-section'>
-          <h3 className='accent-color'>ABOUT ME</h3>
-          <p>{this.state.refugee.about}</p>
-        </section>
-        <section className='profile-section'>
-          <h3 className='accent-color'>CONTACT INFO</h3>
-          <MdPhone className='contact main-color' size={30} />
-          <MdEmail className='contact main-color' size={30} />
-        </section>
+          </section>
+          <section className='profile-section'>
+            <h3 className='accent-color'>ABOUT ME</h3>
+            <p>{this.state.refugee.about}</p>
+          </section>
+          <section className='profile-section'>
+            <h3 className='accent-color'>CONTACT INFO</h3>
+            <MdPhone className='contact main-color' size={30} />
+             <MdEmail className='contact main-color' size={30} />
+          </section>
+          <request refugeeId={this.props.match.params.id}/>
+        </Card>
       </div>
     )
   }
