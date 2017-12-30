@@ -1,4 +1,4 @@
 .main {
-  border: "1px solid black";
-  minHeight: '400px';
+  border: none;
+  min-height: 400px;
 }

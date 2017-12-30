@@ -11,6 +11,8 @@
   width: 300px;
   padding-left: 30px;
   padding-top: 10px;
+  padding-right: 30px;
+  background-color: white;
 }
 
 .header #links ul {
