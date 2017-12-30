@@ -8,8 +8,8 @@ import HostListing from '../../containers/HostListing/HostListing';
 import Listings from '../../containers/Listings/Listings';
 import RefugeeLogin from '../../containers/RefugeeLogin/RefugeeLogin';
 import RefugeeProfile from '../../containers/RefugeeProfile/RefugeeProfile';
-import RefugeeRequest from '../../containers/RefugeeRequest/RefugeeRequest';
-import Requests from '../../containers/Requests/Requests';
+import Request from '../../containers/Request/Request';
+import RefugeeList from '../../containers/RefugeeList/RefugeeList';
 
 class Main extends Component {
   render() {
@@ -20,11 +20,11 @@ class Main extends Component {
           <Route exact path='/host-login' component="" />
           <Route exact path='/refugee-login' component="" />
           <Route exact path='/hosts/:id' component={HostProfile} />
-          <Route exact path='/refugees/:id' component={RefugeeProfile} />
-          <Route exact path='/listings/:id' component={HostListing} />
-          <Route exact path='/requests/:id' component={RefugeeRequest} />
           <Route exact path='/listings' component={Listings} />
-          <Route exact path='/requests' component={Requests} />
+          <Route exact path='/listings/:id' component={HostListing} />
+          <Route exact path='/refugees' component={RefugeeList} />
+          <Route exact path='/refugees/:id' component={RefugeeProfile} />
+
         </Switch>
       </div>
     )

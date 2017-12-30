@@ -1,8 +1,8 @@
 
 export default (state = {}, action) => {
   switch (action.type) {
-    case 'SET_HOST':
-      return action.host;
+    case 'SET_REQUEST':
+      return action.request;
     default:
       return state;
   }
