@@ -33,6 +33,7 @@ import {
   MdEmail
 } from 'react-icons/lib/md';
 
+
 class HostListing extends Component {
   constructor(props) {
     super(props)
@@ -137,6 +138,16 @@ class HostListing extends Component {
             <span>Cozy Guest House for Family</span> <span>   <span>     </span><MdBookmarkOutline className="accent-color" size={30} /></span>
           </div>
           <div className='listing-body'>
+
+            <MdLocationSearching className='location' size={80} />
+            <div className='name-container'>
+              <h2 className='name'>{this.renderFullName()}</h2>
+              <MdLocationOn size={26} className='accent-color' style={{ verticalAlign: 'bottom', marginLeft: -5}} />{this.renderLocation()}
+            </div>
+          </div>
+        </section>
+        <section className='listing-section'>
+          <h3 className='accent-color'>ACCOMODATIONS</h3>
             <MdPeopleOutline size={50} />
             <span> 5 </span>   <span> </span>
             <MdAccessible size={50} />
@@ -147,17 +158,9 @@ class HostListing extends Component {
             <span> </span>   <span> </span>
             <MdChildFriendly size={50} />
             <span> </span>   <span> </span>
-            <MdPets size={50} />
             <br />
-            <MdLocationSearching className='location' size={50} />
-            <div className='name-container'>
-              <h2 className='name'>{}</h2>
-              <MdLocationOn size={26} className='accent-color' style={{ verticalAlign: 'bottom', marginLeft: -5}} />{this.renderLocation()}
-            </div>
-          </div>
-        </section>
-        <section className='listing-section'>
-          <h3 className='accent-color'>ACCOMODATIONS</h3>
+            <MdPets size={50} />
+            <span> </span>   <span> </span>
             <MdHotel size={50} />
             <span> 3 </span>   <span> </span>
             <MdKitchen size={50} />
@@ -166,10 +169,11 @@ class HostListing extends Component {
             <span> </span>   <span> </span>
             <MdNetworkWifi size={50} />
             <span> </span>   <span> </span>
+            <br />
             <MdComputer size={50} />
             <span> </span>   <span> </span>
             <MdPhone size={50} />
-            <br />
+            <span> </span>   <span> </span>
             <MdDirectionsBike size={50} />
             <span> </span>   <span> </span>
             <MdDirectionsCar size={50} />
@@ -177,11 +181,9 @@ class HostListing extends Component {
         </section>
         <section className='listing-section'>
           <h3 className='accent-color'>CONTACT INFO</h3>
-          <ul>
-            <li><h4 className='accent-color' size={30}>{this.renderFullName()}</h4></li>
-            <li><MdPhone className='contact main-color' size={30} /></li>
-            <li><MdEmail className='contact main-color' size={30} /></li>
-          </ul>
+          <MdPhone className='contact main-color' size={40} />  (810) 441-0262 <br />
+          <MdEmail className='contact main-color' size={40} />  laurenritten@gmail.com <br />
+          <MdChatBubbleOutline className="contact main-color" size={40} />  Connect with Lauren
         </section>
       </div>
     )

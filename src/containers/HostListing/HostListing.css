@@ -13,6 +13,12 @@ h3 {
   width: 100%;
 }
 
+.host-listing {
+  max-width: 1000px;
+  margin: 30px auto;
+  border: none;
+}
+
 .listing-container {
   display: inline-block;
   max-width: 450px;
@@ -33,11 +39,11 @@ h3 {
 .listing-body {
   max-width: 425px;
   margin: 0;
-  padding: 0px 20px 28px;
+  padding: 0px 20px 29px;
 }
 
 .location {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 .name-container {
