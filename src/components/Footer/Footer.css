@@ -2,19 +2,19 @@
   text-align: center;
 }
 
-.footer #github-logo {
+.footer #logo {
   margin-top: 25px;
-  margin-bottom: 0;
-  width: 50px;
+  margin-bottom: 5px;
+  width: 300px;
 }
 
-.footer #logo {
-  margin-top: none;
-  width: 50px;
+.footer #github-logo {
+  margin-top: 10px;
+  width: 40px;
 }
 
 .link-button {
-  display: inline-block;
+  display: block;
   color: white;
   text-decoration: none;
   padding: .5em 1em;

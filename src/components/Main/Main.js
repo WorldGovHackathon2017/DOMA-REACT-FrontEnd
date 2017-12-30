@@ -24,7 +24,6 @@ class Main extends Component {
           <Route exact path='/listings/:id' component={HostListing} />
           <Route exact path='/refugees' component={RefugeeList} />
           <Route exact path='/refugees/:id' component={RefugeeProfile} />
-
         </Switch>
       </div>
     )
@@ -33,7 +32,7 @@ class Main extends Component {
 
 const styles = {
   main: {
-    border: "1px solid black",
+    border: "1px solid white",
     minHeight: '400px'
   }
 }
