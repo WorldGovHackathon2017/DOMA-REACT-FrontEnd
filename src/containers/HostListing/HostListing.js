@@ -32,7 +32,9 @@ import {
   MdDirectionsCar,
   MdEmail
 } from 'react-icons/lib/md';
-
+import housePhoto1 from '../../images/housePhoto1.png';
+import brPhoto1 from '../../images/brPhoto1.png';
+import kitchenPhoto from '../../images/kitchenPhoto.png';
 
 class HostListing extends Component {
   constructor(props) {
@@ -56,9 +58,9 @@ class HostListing extends Component {
         state: "Ohio",
         country: "US",
         images: [
-          "https://via.placeholder.com/900x400",
-          "https://via.placeholder.com/900x400",
-          "https://via.placeholder.com/900x400"
+          'https://via.placeholder.com/900x400',
+          'https://via.placeholder.com/900x400',
+          'https://via.placeholder.com/900x400'
           ],
         completed_listing: true,
         host: {
@@ -129,7 +131,7 @@ class HostListing extends Component {
         <section className='carousel-container'>
           <Slider {...sliderSettings}>
             {this.state.listing.images.map((imgUrl, i) =>
-              <div key={i}><img src={imgUrl} style={{ width: '100%', minHeight: 220 }} /></div>
+              <div key={i}><img src={imgUrl} style={{ width: '100%', minHeight: 230 }} /></div>
             )}
           </Slider>
         </section>
@@ -138,7 +140,6 @@ class HostListing extends Component {
             <span>Cozy Guest House for Family</span> <span>   <span>     </span><MdBookmarkOutline className="accent-color" size={30} /></span>
           </div>
           <div className='listing-body'>
-
             <MdLocationSearching className='location' size={80} />
             <div className='name-container'>
               <h2 className='name'>{this.renderFullName()}</h2>
@@ -178,13 +179,21 @@ class HostListing extends Component {
             <span> </span>   <span> </span>
             <MdDirectionsCar size={50} />
             <span> </span>   <span> </span>
+            <br />
+            <span>     </span>
+            <br />
         </section>
         <section className='listing-section'>
           <h3 className='accent-color'>CONTACT INFO</h3>
           <MdPhone className='contact main-color' size={40} />  (810) 441-0262 <br />
           <MdEmail className='contact main-color' size={40} />  laurenritten@gmail.com <br />
           <MdChatBubbleOutline className="contact main-color" size={40} />  Connect with Lauren
+            <br />
+            <span>     </span>
+            <br />
         </section>
+        <div className='bottom-bar main-background-color'>
+        </div>
       </div>
     )
   }
